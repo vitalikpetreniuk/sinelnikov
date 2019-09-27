@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>user info</title>
+	<title>order_info</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -100,8 +100,8 @@
 									</li>
 								</ul>
 							</div>
-							<div class="account-link">
-								<a href="#">Личный кабинет</a>
+							<div class="account-link logged">
+								<a href="#"><img src="img/avatar5.jpg" alt=""><span>Константинов</span> <span>Константин</span></a>
 							</div>
 						</div>
 					</div>
@@ -145,8 +145,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="account-link">
-						<a href="#">Личный кабинет</a>
+					<div class="account-link logged">
+						<a href="#"><img src="img/avatar5.jpg" alt=""><span>Константинов</span> <span>Константин</span></a>
 					</div>
 					<div class="tel-block">
 						<div class="tel-num">
@@ -169,8 +169,8 @@
 					<div class="menu-hidden-cont">
 						<div class="menu-hidden-header">
 							<div class="title-big"><span>Меню</span> сайта</div>
-							<div class="account-link">
-								<a href="#">Личный кабинет</a>
+							<div class="account-link logged">
+								<a href="#"><img src="img/avatar5.jpg" alt=""><span>Константинов</span> <span>Константин</span></a>
 							</div>
 							<button type="button" class="menu-hidden-close">
 								<img src="img/plus.svg" alt="">
@@ -394,14 +394,20 @@
 								<li>
 									<a href="#">Главная</a>
 								</li>
-								<li>Личный кабинет</li>
+								<li>
+									<a href="#">Личный кабинет</a>
+								</li>
+								<li>
+									<a href="#">Заказы</a>
+								</li>
+								<li>Заказ № 1234567890</li>
 							</ul>
 						</div>
 					</div>
 					<div class="add-menu">
 						<ul>
 							<li>
-								<a href="#">Заказы в магазине здоровья</a>
+								<a href="#">Данные пользователя</a>
 							</li>
 							<li>
 								<a href="#">Запись на семинары</a>
@@ -416,115 +422,277 @@
 		</div>
 		<div class="content">
 			<div class="container">
-				<h1>Данные пользователя</h1>
-				<form class="user-info-form">
-					<div class="form-section">
-						<h2>Основные</h2>
-						<div class="row">
-							<div class="col-4">
-								<div class="form-control">
-									<label for="lastname">Фамилия</label>
-									<input id="lastname" type="text">
-								</div>
+				<h1>Заказы в магазине здоровья</h1>
+				<div class="order">
+					<div class="order-info-top">
+						<div class="order-info-top-in">
+							<h2 class="order-info-top-num">Заказ № 1234567890</h2>
+							<div class="order-info-top-date">от 11 января 2019</div>
+						</div>
+						<div class="order-info-top-block">
+							<div class="order-info-top-block-title">Ожидает оплаты</div>
+							<button class="btn-custom blue"><span>Оплатить: 5 100  <b>₽</b></span></button>
+						</div>
+					</div>
+					<div class="form-section order-info">
+						<h3>Покупатель <button type="button" class="order-info-change">Изменить данные</button></h3>
+						<div class="order-info-in">
+							<div class="full-width"><span>Константинов Константин Константинович</span></div>
+							<div>
+								<label>тел.:</label>
+								<span>+7 (458) 952-62-12</span>,
 							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="name">Имя</label>
-									<input id="name" type="text">
-								</div>
+							<div>
+								<label>e-mail:</label>
+								<span>username@site.com</span>
 							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="patronymic">Отчество</label>
-									<input id="patronymic" type="text">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-block-1">
-									<div class="change-photo">
-										<input type="file">
-										<button type="button"><span>Загрузить</span><span>фото</span></button>
+						</div>
+						<form>
+							<div class="row">
+								<div class="col-4">
+									<div class="form-control">
+										<label for="lastname">Фамилия</label>
+										<input id="lastname" type="text">
 									</div>
-									<div class="change-about form-control">
-										<label>Короткий рассказ о себе</label>
-										<textarea></textarea>
+								</div>
+								<div class="col-4">
+									<div class="form-control">
+										<label for="name">Имя</label>
+										<input id="name" type="text">
 									</div>
 								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="tel">Номер телефона</label>
-									<input id="tel" type="tel">
+								<div class="col-4">
+									<div class="form-control">
+										<label for="patronymic">Отчество</label>
+										<input id="patronymic" type="text">
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="form-control">
+										<label for="tel">Номер телефона</label>
+										<input id="tel" type="tel">
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="form-control">
+										<label for="email">E-mail</label>
+										<input id="email" type="email">
+									</div>
+								</div>
+								<div class="col-12">
+									<button class="btn-custom btn-custom-border"><span>Сохранить</span></button>
 								</div>
 							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="email">E-mail</label>
-									<input id="email" type="email">
-								</div>
-							</div>
-							<div class="col-4">
-								<a href="#" class="btn-custom blue change-pass-btn"><span>Сменить пароль</span></a>
-							</div>
-						</div>
+						</form>
 					</div>
-					<div class="form-section">
-						<h2>Адрес</h2>
-						<div class="row">
-							<div class="col-4">
-								<div class="form-control">
-									<label>Страна</label>
-									<select>
-										<option>Россия</option>
-										<option>Украина</option>
-										<option>Белоруссия</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-2">
-								<div class="form-control">
-									<label for="index">Индекс</label>
-									<input id="index" type="text">
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="form-control">
-									<label for="location">Населенный пункт</label>
-									<input id="location" type="text">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-control">
-									<label for="address">Адрес</label>
-									<input id="address" type="text">
-								</div>
-							</div>
+					<div class="form-section order-info">
+						<h3>Адрес доставки <button type="button" class="order-info-change">Изменить данные</button></h3>
+						<div class="order-info-in">
+							<div class="full-width"><span>195200 Москва, Ленинградский пр-т, д. 123, стр. 4, корп. А, кв. 123 </span></div>
 						</div>
+						<form>
+							<div class="row">
+								<div class="col-4">
+									<div class="form-control">
+										<label>Страна</label>
+										<select>
+											<option>Россия</option>
+											<option>Украина</option>
+											<option>Белоруссия</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-2">
+									<div class="form-control">
+										<label for="index">Индекс</label>
+										<input id="index" type="text">
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="form-control">
+										<label for="location">Населенный пункт</label>
+										<input id="location" type="text">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-control">
+										<label for="address">Адрес</label>
+										<input id="address" type="text">
+									</div>
+								</div>
+								<div class="col-12">
+									<button class="btn-custom btn-custom-border"><span>Сохранить</span></button>
+								</div>
+							</div>
+						</form>
 					</div>
-					<div class="form-section">
-						<h2>Скидки и промо-коды</h2>
-						<div class="promo-list">
-							<div class="promo-item">
-								<div class="promo-item-code">-5%</div>
-								<div class="promo-item-info">На все товары и семинары школы для участников проекта «Здравые люди»</div>
+					<form class="table-wrap">
+						<h3>Состав заказа</h3>
+						<div class="table table-cart">
+							<div class="table-top">
+								<div class="table-col product">Товар</div>
+								<div class="table-col price">Цена</div>
+								<div class="table-col qty">Количество</div>
+								<div class="table-col total">Сума</div>
 							</div>
-							<div class="promo-item">
-								<div class="promo-item-code">BFM4324FFMRT</div>
-								<div class="promo-item-info">-15% на первую покупку</div>
-							</div>
-							<div class="promo-item">
-								<div class="promo-item-code">QWA4874WDFY</div>
-								<div class="promo-item-info">-20% на первую повторное прохождение семинара «Сила рода»</div>
+							<div class="table-list">
+								<div class="table-item">
+									<div class="table-col product">
+										<div class="product-item cd">
+											<div class="product-item-img">
+												<a href="#">
+													<div class="cd-in">
+														<div class="cd-back">
+															<div class="cd-cd">
+																<img src="img/cd2.jpg" alt="">
+																<span></span>
+															</div>
+															<div class="cd-cover">
+																<img src="img/cd2.jpg" alt="">
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="table-product-block">
+											<div class="table-product-category">Медитация <span>Электронная версия</span></div>
+											<div class="table-product-title">
+												<a href="#">Медитации: Родовое дерево. Благословение. Мужчина и женщина</a>
+											</div>
+										</div>
+									</div>
+									<div class="table-col price"><b>400</b> ₽</div>
+									<div class="table-col qty">
+										<span>1</span>
+									</div>
+									<div class="table-col total"><b>400</b> ₽</div>
+									<button class="table-item-remove">
+										<img src="img/trash.svg" alt="">
+									</button>
+								</div>
+								<div class="table-item">
+									<div class="table-col product">
+										<div class="product-item">
+											<div class="product-item-img">
+												<a href="#">
+													<div class="product-item-img-in">
+														<img src="img/flash-box.png" alt="">
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="table-product-block">
+											<div class="table-product-category">Флешка с продукцией школы</div>
+											<div class="table-product-title">
+												<a href="#">Полное собрание книг Валерия Синельникова</a>
+											</div>
+										</div>
+									</div>
+									<div class="table-col price"><b>400</b> ₽</div>
+									<div class="table-col qty">
+										<div class="qty-block">
+											<input type="number" value="1" step="1" min="1">
+										</div>
+									</div>
+									<div class="table-col total"><b>400</b> ₽</div>
+									<button class="table-item-remove">
+										<img src="img/trash.svg" alt="">
+									</button>
+								</div>
+								<div class="table-item">
+									<div class="table-col product">
+										<div class="product-item">
+											<div class="product-item-img">
+												<a href="#">
+													<div class="product-item-img-in">
+														<img src="img/apihtit.jpg" alt="">
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="table-product-block">
+											<div class="table-product-category">Продукция пасеки</div>
+											<div class="table-product-title">
+												<a href="#">Апихтит</a>
+											</div>
+										</div>
+									</div>
+									<div class="table-col price"><b>600</b> ₽</div>
+									<div class="table-col qty">
+										<div class="qty-block">
+											<input type="number" value="1" step="1" min="1">
+										</div>
+									</div>
+									<div class="table-col total"><b>600</b> ₽</div>
+									<button class="table-item-remove">
+										<img src="img/trash.svg" alt="">
+									</button>
+								</div>
+								<div class="table-item">
+									<div class="table-col product">
+										<div class="product-item book">
+											<div class="product-item-img">
+												<a href="#">
+													<div class="book-cover">
+														<div>
+															<img src="img/book2.jpg" alt="">
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="table-product-block">
+											<div class="table-product-category">Книга</div>
+											<div class="table-product-title">
+												<a href="#">Возлюби болезнь свою!</a>
+											</div>
+										</div>
+									</div>
+									<div class="table-col price"><b>1200</b> ₽</div>
+									<div class="table-col qty">
+										<div class="qty-block">
+											<input type="number" value="1" step="1" min="1">
+										</div>
+									</div>
+									<div class="table-col total"><b>1200</b> ₽</div>
+									<button class="table-item-remove">
+										<img src="img/trash.svg" alt="">
+									</button>
+								</div>
 							</div>
 						</div>
-						<div class="promo-form">
-							<div class="form-control">
-								<input type="text" placeholder="Добавить промо-код">
-							</div>
-							<button type="submit" class="btn-custom btn-custom-border"><span>Добавить</span></button>
+						<div class="cart-bottom">
+							<div class="cart-total-price">Стоимость товаров: <span>4 800</span> <b>₽</b></div>
+							<div class="cart-sale">Скидка: <span>250</span> <b>₽</b></div>
+							<div class="cart-total">Итого: <span>4 800</span> <b>₽</b></div>
 						</div>
-					</div>
-				</form>
+						<div class="form-section">
+							<h3>Способ оплаты</h3>
+							<div class="form-check-wrap">
+								<div class="form-check">
+									<input id="payment_card" type="radio" name="payment_method" checked>
+									<label for="payment_card">Оплата банковской картой</label>
+								</div>
+								<div class="form-check">
+									<input id="payment_cod" type="radio" name="payment_method">
+									<label for="payment_cod">Наложенный платеж</label>
+								</div>
+							</div>
+						</div>
+						<div class="checkout-bottom">
+							<div class="checkout-bottom-left">
+								<div class="checkout-price">Общая стоимость товаров: <span>4 800</span> <b>₽</b></div>
+								<div class="checkout-del">Cтоимость доставки: <span>450</span> <b>₽</b></div>
+								<div class="checkout-total"><strong>Итого: <span>5 250</span></strong> <b>₽</b></div>
+							</div>
+							<div class="checkout-bottom-right">
+								<button type="submit" class="btn-custom blue"><span><span>Оплатить:</span> <b>5 100</b> ₽</span><span>Подтвердить заказ</span></button>
+								<div class="checkout-del-info">Включая стоимость доставки: <span>300</span> <b>₽</b></div>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>

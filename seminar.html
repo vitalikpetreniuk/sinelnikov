@@ -415,7 +415,7 @@
 							</div>
 							<div class="article-author-name">Валерий Владимирович Синельников</div>
 						</div>
-						<button type="button" class="btn-custom"><span>Записаться</span></button>
+						<button type="button" class="btn-custom modal-open" data-target="modal-seminar"><span>Записаться</span></button>
 					</div>
 				</div>
 			</div>
@@ -456,7 +456,7 @@
 							<p>В заключительной части семинара мы создадим совместный очистительный обряд и молитву во славу наших предков.</p>
 							<p>На семинаре будет представлена аудио и видео продукция, книги Валерия Синельникова.</p>
 							<div class="article-bottom">
-								<button type="button" class="btn-custom"><span>Записаться</span></button>
+								<button type="button" class="btn-custom modal-open" data-target="modal-seminar"><span>Записаться</span></button>
 								<div class="article-bottom-info">
 									<div class="article-date">15 декабря, суббота, с 11:00 до 18:00</div>
 									<div class="article-location">Москва, Измайловское шоссе д.71, корп. 3В, гост. Вега-Измайлово, конференц-зал «Васнецов»</div>
@@ -719,6 +719,103 @@
 			</div>
 		</div>
 	</footer>
+
+	<div data-id="modal-seminar" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-in">
+				<div class="modal-cont">
+					<div class="modal-header">
+						<h1>За пись на семинар «Сила Рода»</h1>
+						<button class="modal-close"><img src="img/plus.svg" alt=""></button>
+					</div>
+					<div class="modal-body">
+						<div class="seminar-info">
+							<div class="time">15 мая, суббота, с 11:00 до 18:00</div>
+							<div class="location">Москва, Измайловское шоссе д.71, корп. 3В, гост. Вега-Измайлово, конференц-зал «Васнецов»</div>
+						</div>
+						<div class="modal-form">
+							<form>
+								<div class="row">
+									<div class="col-4">
+										<div class="form-control">
+											<label for="lastname">Фамилия</label>
+											<input id="lastname" type="text">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="name">Имя</label>
+											<input id="name" type="text">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="patronymic">Отчество</label>
+											<input id="patronymic" type="text">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="tel">Номер телефона</label>
+											<input id="tel" type="tel">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="email">E-mail</label>
+											<input id="email" type="email">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="city">Город</label>
+											<input id="city" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="form-check">
+									<input id="offer" type="checkbox">
+									<label for="offer">Принимаю <a href="#">договор публичной оферты</a></label>
+								</div>
+								<div class="form-check">
+									<input id="rules" type="checkbox">
+									<label for="rules">Соглашаюсь с <a href="#">положением о правилах проведения семинаров</a></label>
+								</div>
+								<div class="modal-form-bottom">
+									<div class="modal-form-block">
+										<div class="cart-total">Стоимость: <span>4 800</span> <b>₽</b></div>
+										<div class="cart-promo">
+											<button class="cart-promo-btn to-form">У меня есть промокод!</button>
+										</div>
+									</div>
+									<button type="submit" class="btn-custom modal-open" data-target="modal-success"><span>Отправить заявку</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-back"></div>
+			</div>
+		</div>
+	</div>
+
+	<div data-id="modal-success" class="modal modal-success">
+		<div class="modal-wrap">
+			<div class="modal-in">
+				<div class="modal-cont">
+					<div class="modal-header">
+						<h1>Ваша заявка успешно обработана!</h1>
+						<button class="modal-close"><img src="img/plus.svg" alt=""></button>
+					</div>
+					<div class="modal-body">
+						<p>Мы свяжемся с вами в ближайшее время.</p>
+						<button type="button" class="btn-custom btn-custom-border"><span>Закрыть</span></button>
+					</div>
+				</div>
+				<div class="modal-back"></div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 

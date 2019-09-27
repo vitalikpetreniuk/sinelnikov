@@ -405,7 +405,7 @@
 				<div class="container">
 					<div class="article-cont-wrap">
 						<div class="article-cont-in">
-							<h1>Снежана Геннадьевна Повитц <button type="button" class="btn-custom"><span>Записаться на консультацию</span></button></h1>
+							<h1>Снежана Геннадьевна Повитц <button type="button" class="btn-custom modal-open" data-target="modal-teacher"><span>Записаться на консультацию</span></button></h1>
 							<div class="teacher-block">
 								<div class="teacher-block-avatar">
 									<img src="img/teacher.jpg" alt="">
@@ -462,7 +462,7 @@
 							</ul>
 							<p><b>Успехов вам! Будьте здоровы, живите богато. </b></p>
 							<p>Искренне ваша, Снежана</p>
-							<button type="button" class="btn-custom"><span>Записаться на консультацию</span></button>
+							<button type="button" class="btn-custom modal-open" data-target="modal-teacher"><span>Записаться на консультацию</span></button>
 						</div>
 						<div class="article-cont-side">
 							<div class="article-cont-side-in">
@@ -693,6 +693,44 @@
 			</div>
 		</div>
 	</footer>
+
+	<div data-id="modal-teacher" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-in">
+				<div class="modal-cont">
+					<div class="modal-header">
+						<h1>Запись на консультацию</h1>
+						<button class="modal-close"><img src="img/plus.svg" alt=""></button>
+					</div>
+					<div class="modal-body">
+						<h3>Преподаватель: <span>Кеменова Елена Михайловна</span></h3>
+						<div class="modal-form">
+							<form>
+								<div class="row">
+									<div class="col-6">
+										<div class="form-control">
+											<label for="name">Имя</label>
+											<input id="name" type="text">
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-control">
+											<label for="tel">Номер телефона</label>
+											<input id="tel" type="tel">
+										</div>
+									</div>
+								</div>
+								<div class="modal-form-bottom">
+									<button type="submit" class="btn-custom"><span>Записаться</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-back"></div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 

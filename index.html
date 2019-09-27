@@ -63,7 +63,7 @@
 						</ul>
 					</div>
 					<div class="account-link">
-						<a href="#">Личный кабинет</a>
+						<a href="#" class="modal-open" data-target="modal-log">Личный кабинет</a>
 					</div>
 				</div>
 				<div class="section-top-right">
@@ -75,7 +75,7 @@
 							<a href="#">8-(800)-775-51-20</a>
 							<span>Бесплатный номер</span>
 						</div>
-						<button type="button" class="callback-link">Заказать обратный звонок</button>
+						<button type="button" class="callback-link modal-open" data-target="modal-callback">Заказать обратный звонок</button>
 					</div>
 					<div class="socials">
 						<div class="socials-title">В соцсетях:</div>
@@ -144,14 +144,14 @@
 						</ul>
 					</div>
 					<div class="account-link">
-						<a href="#">Личный кабинет</a>
+						<a href="#" class="modal-open" data-target="modal-log">Личный кабинет</a>
 					</div>
 					<div class="tel-block">
 						<div class="tel-num">
 							<a href="#">8-(800)-775-51-20</a>
 							<span>Бесплатный номер</span>
 						</div>
-						<button type="button" class="callback-link">Заказать обратный звонок</button>
+						<button type="button" class="callback-link modal-open" data-target="modal-callback">Заказать обратный звонок</button>
 					</div>
 				</div>
 			</div>
@@ -168,7 +168,7 @@
 						<div class="menu-hidden-header">
 							<div class="title-big"><span>Меню</span> сайта</div>
 							<div class="account-link">
-								<a href="#">Личный кабинет</a>
+								<a href="#" class="modal-open" data-target="modal-log">Личный кабинет</a>
 							</div>
 							<button type="button" class="menu-hidden-close">
 								<img src="img/plus.svg" alt="">
@@ -341,7 +341,7 @@
 										<a href="#">8-(800)-775-51-20</a>
 										<span>Бесплатный номер</span>
 									</div>
-									<button type="button" class="callback-link">Заказать обратный звонок</button>
+									<button type="button" class="callback-link modal-open" data-target="modal-callback">Заказать обратный звонок</button>
 								</div>
 							</div>
 							<div class="socials">
@@ -472,7 +472,7 @@
 					<div class="back-subtitle">Ежедневный утренний онлайн-интенсив</div>
 					<p class="custom-text-2">Пара предложений с рассказом об интенсиве. Пара предложений с рассказом об интенсиве. Пара предложений с рассказом об интенсиве. У каждого человека есть отец и мать, у них тоже были родители, у тех тоже были свои родители…
 						<a href="#">Подробнее о проекте…</a></p>
-					<a href="#" class="btn-custom btn-custom-sm"><span>Записаться</span></a>
+					<a href="#" class="btn-custom btn-custom-sm modal-open" data-target="modal-health"><span>Записаться</span></a>
 					<div class="back-sale">Скидка 5%</div>
 					<div class="custom-text-2">На все товары и семинары школы для участников проекта!</div>
 				</div>
@@ -1669,6 +1669,236 @@
 			</div>
 		</div>
 	</footer>
+
+	<div data-id="modal-callback" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-in">
+				<div class="modal-cont">
+					<div class="modal-header">
+						<h1>Заказать обратный звонок</h1>
+						<button class="modal-close"><img src="img/plus.svg" alt=""></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-form">
+							<form>
+								<div class="row">
+									<div class="col-6">
+										<div class="form-control">
+											<label for="name">Имя</label>
+											<input id="name" type="text">
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-control">
+											<label for="tel">Номер телефона</label>
+											<input id="tel" type="tel">
+										</div>
+									</div>
+								</div>
+								<div class="modal-form-bottom">
+									<button type="submit" class="btn-custom"><span>Заказать</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-back"></div>
+			</div>
+		</div>
+	</div>
+
+	<div data-id="modal-health" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-in">
+				<div class="modal-cont">
+					<div class="modal-header">
+						<h1>Запись на проект «Здравые люди»</h1>
+						<button class="modal-close"><img src="img/plus.svg" alt=""></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-form">
+							<form>
+								<div class="row">
+									<div class="col-4">
+										<div class="form-control">
+											<label for="lastname">Фамилия</label>
+											<input id="lastname" type="text">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="name2">Имя</label>
+											<input id="name2" type="text">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="patronymic">Отчество</label>
+											<input id="patronymic" type="text">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="tel2">Номер телефона</label>
+											<input id="tel2" type="tel">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="email">E-mail</label>
+											<input id="email" type="email">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="form-control">
+											<label for="city">Город</label>
+											<input id="city" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="form-check">
+									<input id="offer" type="checkbox">
+									<label for="offer">Принимаю <a href="#">договор публичной оферты</a></label>
+								</div>
+								<div class="form-check">
+									<input id="rules" type="checkbox">
+									<label for="rules">Соглашаюсь с <a href="#">положением о правилах проведения семинаров</a></label>
+								</div>
+								<div class="modal-select">
+									<div class="form-control">
+										<label>Срок участия</label>
+										<select>
+											<option value="1">1 Месяц</option>
+											<option value="3">3 Месяца</option>
+											<option value="6">6 Месяцев</option>
+											<option value="12">12 Месяцев</option>
+										</select>
+									</div>
+									<div class="modal-select-info">
+										<div>При оформлении подписки на срок более 12 месяцев, вы получите годовую <span>скидку 5%</span> на все товары и семинары школы!</div>
+										<div><b>Поздравляем!</b> Вы получите <span>скидку 5%</span> на все товары и семинары школы!</div>
+									</div>
+								</div>
+								<div class="modal-form-bottom">
+									<div class="modal-form-block">
+										<div class="cart-total">Стоимость: <span>500</span> <b>₽</b></div>
+									</div>
+									<button type="submit" class="btn-custom"><span>Оплатить</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-back"></div>
+			</div>
+		</div>
+	</div>
+
+	<div data-id="modal-log" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-in">
+				<div class="modal-cont">
+					<div class="modal-header with-header-button">
+						<h1>Вход в личный кабинет</h1>
+						<button type="button" class="modal-header-button modal-open" data-target="modal-reg">Регистрация</button>
+						<button class="modal-close"><img src="img/plus.svg" alt=""></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-form">
+							<form>
+								<div class="row">
+									<div class="col-6">
+										<div class="form-control">
+											<label for="email2">E-mail</label>
+											<input id="email2" type="text">
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-control">
+											<label for="pass">Пароль</label>
+											<input id="pass" type="password">
+										</div>
+									</div>
+								</div>
+								<div class="modal-form-bottom">
+									<button type="submit" class="btn-custom"><span>Войти</span></button>
+								</div>
+							</form>
+						</div>
+						<div class="links-in">
+							<div class="links-title">Или войдите с помощью соцсетей</div>
+							<div class="links-list">
+								<a href="#">
+									<img src="img/icon-vk-color.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/icon-fb-color.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/icon-odnoklassniki-color.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/icon-twitter-color.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/icon-google-color.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-back"></div>
+			</div>
+		</div>
+	</div>
+
+	<div data-id="modal-reg" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-in">
+				<div class="modal-cont">
+					<div class="modal-header with-header-button">
+						<h1>Регистрация</h1>
+						<button type="button" class="modal-header-button modal-open" data-target="modal-log">Вход с логином и паролем</button>
+						<button class="modal-close"><img src="img/plus.svg" alt=""></button>
+					</div>
+					<div class="modal-body">
+						<p>Укажите свой e-mail. Пароль для входа прийдет на указанный адрес</p>
+						<div class="modal-form">
+							<form>
+								<div class="form-flex">
+									<div class="form-control">
+										<input id="email3" type="text" placeholder="E-mail">
+									</div>
+									<button type="submit" class="btn-custom"><span>Зарегистрироваться</span></button>
+								</div>
+							</form>
+						</div>
+						<div class="links-in">
+							<div class="links-title">Или войдите с помощью соцсетей</div>
+							<div class="links-list">
+								<a href="#">
+									<img src="img/icon-vk-color.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/icon-fb-color.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/icon-odnoklassniki-color.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/icon-twitter-color.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/icon-google-color.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-back"></div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 

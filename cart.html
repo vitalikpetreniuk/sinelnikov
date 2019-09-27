@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>user info</title>
+	<title>cart</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -101,7 +101,7 @@
 								</ul>
 							</div>
 							<div class="account-link">
-								<a href="#">Личный кабинет</a>
+								<a href="#" class="modal-open" data-target="modal-log">Личный кабинет</a>
 							</div>
 						</div>
 					</div>
@@ -146,7 +146,7 @@
 						</ul>
 					</div>
 					<div class="account-link">
-						<a href="#">Личный кабинет</a>
+						<a href="#" class="modal-open" data-target="modal-log">Личный кабинет</a>
 					</div>
 					<div class="tel-block">
 						<div class="tel-num">
@@ -170,7 +170,7 @@
 						<div class="menu-hidden-header">
 							<div class="title-big"><span>Меню</span> сайта</div>
 							<div class="account-link">
-								<a href="#">Личный кабинет</a>
+								<a href="#" class="modal-open" data-target="modal-log">Личный кабинет</a>
 							</div>
 							<button type="button" class="menu-hidden-close">
 								<img src="img/plus.svg" alt="">
@@ -385,146 +385,170 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrap-block">
+		<div class="breadcrumbs">
 			<div class="container">
-				<div class="wrap-block-in">
-					<div class="breadcrumbs">
-						<div class="breadcrumbs-in">
-							<ul>
-								<li>
-									<a href="#">Главная</a>
-								</li>
-								<li>Личный кабинет</li>
-							</ul>
-						</div>
-					</div>
-					<div class="add-menu">
-						<ul>
-							<li>
-								<a href="#">Заказы в магазине здоровья</a>
-							</li>
-							<li>
-								<a href="#">Запись на семинары</a>
-							</li>
-							<li>
-								<a href="#">Блог</a>
-							</li>
-						</ul>
-					</div>
+				<div class="breadcrumbs-in">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>Корзина</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="content">
 			<div class="container">
-				<h1>Данные пользователя</h1>
-				<form class="user-info-form">
-					<div class="form-section">
-						<h2>Основные</h2>
-						<div class="row">
-							<div class="col-4">
-								<div class="form-control">
-									<label for="lastname">Фамилия</label>
-									<input id="lastname" type="text">
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="name">Имя</label>
-									<input id="name" type="text">
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="patronymic">Отчество</label>
-									<input id="patronymic" type="text">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-block-1">
-									<div class="change-photo">
-										<input type="file">
-										<button type="button"><span>Загрузить</span><span>фото</span></button>
+				<h1>Корзина</h1>
+				<div class="cart">
+					<div class="table table-cart">
+						<div class="table-top">
+							<div class="table-col product">Товар</div>
+							<div class="table-col price">Цена</div>
+							<div class="table-col qty">Количество</div>
+							<div class="table-col total">Сума</div>
+						</div>
+						<div class="table-list">
+							<div class="table-item">
+								<div class="table-col product">
+									<div class="product-item cd">
+										<div class="product-item-img">
+											<a href="#">
+												<div class="cd-in">
+													<div class="cd-back">
+														<div class="cd-cd">
+															<img src="img/cd2.jpg" alt="">
+															<span></span>
+														</div>
+														<div class="cd-cover">
+															<img src="img/cd2.jpg" alt="">
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
 									</div>
-									<div class="change-about form-control">
-										<label>Короткий рассказ о себе</label>
-										<textarea></textarea>
+									<div class="table-product-block">
+										<div class="table-product-category">Медитация <span>Электронная версия</span></div>
+										<div class="table-product-title">
+											<a href="#">Медитации: Родовое дерево. Благословение. Мужчина и женщина</a>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="tel">Номер телефона</label>
-									<input id="tel" type="tel">
+								<div class="table-col price"><b>400</b> ₽</div>
+								<div class="table-col qty">
+									<span>1</span>
 								</div>
+								<div class="table-col total"><b>400</b> ₽</div>
+								<button class="table-item-remove">
+									<img src="img/trash.svg" alt="">
+								</button>
 							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="email">E-mail</label>
-									<input id="email" type="email">
+							<div class="table-item">
+								<div class="table-col product">
+									<div class="product-item">
+										<div class="product-item-img">
+											<a href="#">
+												<div class="product-item-img-in">
+													<img src="img/flash-box.png" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="table-product-block">
+										<div class="table-product-category">Флешка с продукцией школы</div>
+										<div class="table-product-title">
+											<a href="#">Полное собрание книг Валерия Синельникова</a>
+										</div>
+									</div>
 								</div>
+								<div class="table-col price"><b>400</b> ₽</div>
+								<div class="table-col qty">
+									<div class="qty-block">
+										<input type="number" value="1" step="1" min="1">
+									</div>
+								</div>
+								<div class="table-col total"><b>400</b> ₽</div>
+								<button class="table-item-remove">
+									<img src="img/trash.svg" alt="">
+								</button>
 							</div>
-							<div class="col-4">
-								<a href="#" class="btn-custom blue change-pass-btn"><span>Сменить пароль</span></a>
+							<div class="table-item">
+								<div class="table-col product">
+									<div class="product-item">
+										<div class="product-item-img">
+											<a href="#">
+												<div class="product-item-img-in">
+													<img src="img/apihtit.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="table-product-block">
+										<div class="table-product-category">Продукция пасеки</div>
+										<div class="table-product-title">
+											<a href="#">Апихтит</a>
+										</div>
+									</div>
+								</div>
+								<div class="table-col price"><b>600</b> ₽</div>
+								<div class="table-col qty">
+									<div class="qty-block">
+										<input type="number" value="1" step="1" min="1">
+									</div>
+								</div>
+								<div class="table-col total"><b>600</b> ₽</div>
+								<button class="table-item-remove">
+									<img src="img/trash.svg" alt="">
+								</button>
+							</div>
+							<div class="table-item">
+								<div class="table-col product">
+									<div class="product-item book">
+										<div class="product-item-img">
+											<a href="#">
+												<div class="book-cover">
+													<div>
+														<img src="img/book2.jpg" alt="">
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="table-product-block">
+										<div class="table-product-category">Книга</div>
+										<div class="table-product-title">
+											<a href="#">Возлюби болезнь свою!</a>
+										</div>
+									</div>
+								</div>
+								<div class="table-col price"><b>1200</b> ₽</div>
+								<div class="table-col qty">
+									<div class="qty-block">
+										<input type="number" value="1" step="1" min="1">
+									</div>
+								</div>
+								<div class="table-col total"><b>1200</b> ₽</div>
+								<button class="table-item-remove">
+									<img src="img/trash.svg" alt="">
+								</button>
 							</div>
 						</div>
 					</div>
-					<div class="form-section">
-						<h2>Адрес</h2>
-						<div class="row">
-							<div class="col-4">
+					<div class="cart-bottom">
+						<div class="cart-total">Итого: <span>4 800</span> <b>₽</b></div>
+						<div class="cart-promo">
+							<button class="cart-promo-btn to-form">У меня есть промокод!</button>
+							<form class="cart-promo-form">
 								<div class="form-control">
-									<label>Страна</label>
-									<select>
-										<option>Россия</option>
-										<option>Украина</option>
-										<option>Белоруссия</option>
-									</select>
+									<input type="text" placeholder="Введите промо-код на скидку">
 								</div>
-							</div>
-							<div class="col-2">
-								<div class="form-control">
-									<label for="index">Индекс</label>
-									<input id="index" type="text">
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="form-control">
-									<label for="location">Населенный пункт</label>
-									<input id="location" type="text">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-control">
-									<label for="address">Адрес</label>
-									<input id="address" type="text">
-								</div>
-							</div>
+								<button type="submit" class="btn-custom btn-custom-border"><span>Применить</span></button>
+							</form>
 						</div>
+						<button class="btn-custom cart-submit"><span>Оформить заказ</span></button>
 					</div>
-					<div class="form-section">
-						<h2>Скидки и промо-коды</h2>
-						<div class="promo-list">
-							<div class="promo-item">
-								<div class="promo-item-code">-5%</div>
-								<div class="promo-item-info">На все товары и семинары школы для участников проекта «Здравые люди»</div>
-							</div>
-							<div class="promo-item">
-								<div class="promo-item-code">BFM4324FFMRT</div>
-								<div class="promo-item-info">-15% на первую покупку</div>
-							</div>
-							<div class="promo-item">
-								<div class="promo-item-code">QWA4874WDFY</div>
-								<div class="promo-item-info">-20% на первую повторное прохождение семинара «Сила рода»</div>
-							</div>
-						</div>
-						<div class="promo-form">
-							<div class="form-control">
-								<input type="text" placeholder="Добавить промо-код">
-							</div>
-							<button type="submit" class="btn-custom btn-custom-border"><span>Добавить</span></button>
-						</div>
-					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>

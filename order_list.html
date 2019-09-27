@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>user info</title>
+	<title>order_list</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -401,7 +401,7 @@
 					<div class="add-menu">
 						<ul>
 							<li>
-								<a href="#">Заказы в магазине здоровья</a>
+								<a href="#">Данные пользователя</a>
 							</li>
 							<li>
 								<a href="#">Запись на семинары</a>
@@ -416,91 +416,112 @@
 		</div>
 		<div class="content">
 			<div class="container">
-				<h1>Данные пользователя</h1>
+				<h1>Заказы в магазине здоровья</h1>
+				<div class="table table-order">
+					<div class="table-top">
+						<div class="table-col date">Дата</div>
+						<div class="table-col order-num">Номер заказа</div>
+						<div class="table-col sum">Сумма</div>
+						<div class="table-col status">Статус</div>
+						<div class="table-col tracking-num">Трекинг-номер</div>
+					</div>
+					<div class="table-list">
+						<div class="table-item">
+							<div class="table-col date">11 января 2019</div>
+							<div class="table-col order-num">1234567890</div>
+							<div class="table-col sum"><span>18 560</span>₽</div>
+							<div class="table-col status">
+								<div>
+									<b>Ожидает оплаты</b>
+								</div>
+								<button class="btn-custom blue"><span>Оплатить</span></button>
+							</div>
+							<div class="table-col tracking-num"></div>
+						</div>
+						<div class="table-item">
+							<div class="table-col date">29 декабря 2018</div>
+							<div class="table-col order-num">1234567325</div>
+							<div class="table-col sum"><span>460</span>₽</div>
+							<div class="table-col status">
+								<div>
+									<b>Ожидает отправки</b>
+									<span>(наложенный платеж: <span>460</span> <b>₽</b>)</span>
+								</div>
+							</div>
+							<div class="table-col tracking-num"></div>
+						</div>
+						<div class="table-item">
+							<div class="table-col date">15 ноября 2018</div>
+							<div class="table-col order-num">1234567217</div>
+							<div class="table-col sum"><span>800</span>₽</div>
+							<div class="table-col status">
+								<div>
+									<b>Отправлен</b>
+									<span>(наложенный платеж: <span>400</span> <b>₽</b>)</span>
+								</div>
+							</div>
+							<div class="table-col tracking-num">14240010887254</div>
+						</div>
+						<div class="table-item">
+							<div class="table-col date">29 марта 2018</div>
+							<div class="table-col order-num">1234567132</div>
+							<div class="table-col sum"><span>7 500</span>₽</div>
+							<div class="table-col status">
+								<div>
+									<b>Отправлен</b>
+								</div>
+							</div>
+							<div class="table-col tracking-num">14240010887254</div>
+						</div>
+						<div class="table-item">
+							<div class="table-col date">12 февраля 2018</div>
+							<div class="table-col order-num">1234529325</div>
+							<div class="table-col sum"><span>15 950</span>₽</div>
+							<div class="table-col status">
+								<div>
+									<b>Ожидает оплаты</b>
+									<span>(электронные версии: <span>300</span> <b>₽</b>)</span>
+								</div>
+								<button class="btn-custom blue"><span>Оплатить</span></button>
+							</div>
+							<div class="table-col tracking-num">14240010887254</div>
+						</div>
+						<div class="table-item received">
+							<div class="table-col date">29 января 2018</div>
+							<div class="table-col order-num">1234567132</div>
+							<div class="table-col sum"><span>7 500</span>₽</div>
+							<div class="table-col status">
+								<div>
+									<b>Получен</b>
+								</div>
+							</div>
+							<div class="table-col tracking-num">14240010887254</div>
+						</div>
+						<div class="table-item received">
+							<div class="table-col date">29 января 2018</div>
+							<div class="table-col order-num">1234567132</div>
+							<div class="table-col sum"><span>7 500</span>₽</div>
+							<div class="table-col status">
+								<div>
+									<b>Получен</b>
+								</div>
+							</div>
+							<div class="table-col tracking-num">14240010887254</div>
+						</div>
+						<div class="table-item received">
+							<div class="table-col date">29 января 2018</div>
+							<div class="table-col order-num">1234567132</div>
+							<div class="table-col sum"><span>7 500</span>₽</div>
+							<div class="table-col status">
+								<div>
+									<b>Получен</b>
+								</div>
+							</div>
+							<div class="table-col tracking-num">14240010887254</div>
+						</div>
+					</div>
+				</div>
 				<form class="user-info-form">
-					<div class="form-section">
-						<h2>Основные</h2>
-						<div class="row">
-							<div class="col-4">
-								<div class="form-control">
-									<label for="lastname">Фамилия</label>
-									<input id="lastname" type="text">
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="name">Имя</label>
-									<input id="name" type="text">
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="patronymic">Отчество</label>
-									<input id="patronymic" type="text">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-block-1">
-									<div class="change-photo">
-										<input type="file">
-										<button type="button"><span>Загрузить</span><span>фото</span></button>
-									</div>
-									<div class="change-about form-control">
-										<label>Короткий рассказ о себе</label>
-										<textarea></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="tel">Номер телефона</label>
-									<input id="tel" type="tel">
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="email">E-mail</label>
-									<input id="email" type="email">
-								</div>
-							</div>
-							<div class="col-4">
-								<a href="#" class="btn-custom blue change-pass-btn"><span>Сменить пароль</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="form-section">
-						<h2>Адрес</h2>
-						<div class="row">
-							<div class="col-4">
-								<div class="form-control">
-									<label>Страна</label>
-									<select>
-										<option>Россия</option>
-										<option>Украина</option>
-										<option>Белоруссия</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-2">
-								<div class="form-control">
-									<label for="index">Индекс</label>
-									<input id="index" type="text">
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="form-control">
-									<label for="location">Населенный пункт</label>
-									<input id="location" type="text">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-control">
-									<label for="address">Адрес</label>
-									<input id="address" type="text">
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="form-section">
 						<h2>Скидки и промо-коды</h2>
 						<div class="promo-list">

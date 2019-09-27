@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>user info</title>
+	<title>my_seminars</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -100,8 +100,8 @@
 									</li>
 								</ul>
 							</div>
-							<div class="account-link">
-								<a href="#">Личный кабинет</a>
+							<div class="account-link logged">
+								<a href="#"><img src="img/avatar5.jpg" alt=""><span>Константинов</span> <span>Константин</span></a>
 							</div>
 						</div>
 					</div>
@@ -145,8 +145,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="account-link">
-						<a href="#">Личный кабинет</a>
+					<div class="account-link logged">
+						<a href="#"><img src="img/avatar5.jpg" alt=""><span>Константинов</span> <span>Константин</span></a>
 					</div>
 					<div class="tel-block">
 						<div class="tel-num">
@@ -169,8 +169,8 @@
 					<div class="menu-hidden-cont">
 						<div class="menu-hidden-header">
 							<div class="title-big"><span>Меню</span> сайта</div>
-							<div class="account-link">
-								<a href="#">Личный кабинет</a>
+							<div class="account-link logged">
+								<a href="#"><img src="img/avatar5.jpg" alt=""><span>Константинов</span> <span>Константин</span></a>
 							</div>
 							<button type="button" class="menu-hidden-close">
 								<img src="img/plus.svg" alt="">
@@ -394,17 +394,23 @@
 								<li>
 									<a href="#">Главная</a>
 								</li>
-								<li>Личный кабинет</li>
+								<li>
+									<a href="#">Личный кабинет</a>
+								</li>
+								<li>
+									<a href="#">Заказы</a>
+								</li>
+								<li>Заказ № 1234567890</li>
 							</ul>
 						</div>
 					</div>
 					<div class="add-menu">
 						<ul>
 							<li>
-								<a href="#">Заказы в магазине здоровья</a>
+								<a href="#">Данные пользователя</a>
 							</li>
 							<li>
-								<a href="#">Запись на семинары</a>
+								<a href="#">Заказы в магазине здоровья</a>
 							</li>
 							<li>
 								<a href="#">Блог</a>
@@ -416,115 +422,123 @@
 		</div>
 		<div class="content">
 			<div class="container">
-				<h1>Данные пользователя</h1>
-				<form class="user-info-form">
-					<div class="form-section">
-						<h2>Основные</h2>
-						<div class="row">
-							<div class="col-4">
-								<div class="form-control">
-									<label for="lastname">Фамилия</label>
-									<input id="lastname" type="text">
-								</div>
+				<h1>Запись на семинары</h1>
+				<div class="my-seminars-list">
+					<div class="my-seminars-item">
+						<h3>
+							<a href="#">Искусство планирования своей жизни. Успешное достижение целей</a>
+						</h3>
+						<div class="my-seminars-item-author">
+							<div class="avatar">
+								<img src="img/avatar2.jpg" alt="">
 							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="name">Имя</label>
-									<input id="name" type="text">
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="patronymic">Отчество</label>
-									<input id="patronymic" type="text">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-block-1">
-									<div class="change-photo">
-										<input type="file">
-										<button type="button"><span>Загрузить</span><span>фото</span></button>
-									</div>
-									<div class="change-about form-control">
-										<label>Короткий рассказ о себе</label>
-										<textarea></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="tel">Номер телефона</label>
-									<input id="tel" type="tel">
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="form-control">
-									<label for="email">E-mail</label>
-									<input id="email" type="email">
-								</div>
-							</div>
-							<div class="col-4">
-								<a href="#" class="btn-custom blue change-pass-btn"><span>Сменить пароль</span></a>
-							</div>
+							<div class="name">Игорь Смирнов</div>
+						</div>
+						<div class="seminar-info">
+							<div class="time">15 декабря, суббота, с 11:00 до 18:00</div>
+							<div class="location">Москва, Измайловское шоссе д.71, корп. 3В, гост. Вега-Измайлово, конференц-зал «Васнецов»</div>
+						</div>
+						<div class="my-seminars-item-panel">
+							<div>Цена: <b>15 950 <span>₽</span></b></div>
+							<div>Статус: <b>В обработке</b></div>
 						</div>
 					</div>
-					<div class="form-section">
-						<h2>Адрес</h2>
-						<div class="row">
-							<div class="col-4">
-								<div class="form-control">
-									<label>Страна</label>
-									<select>
-										<option>Россия</option>
-										<option>Украина</option>
-										<option>Белоруссия</option>
-									</select>
-								</div>
+					<div class="my-seminars-item">
+						<h3>
+							<a href="#">Искусство планирования своей жизни. Успешное достижение целей</a>
+						</h3>
+						<div class="my-seminars-item-author">
+							<div class="avatar">
+								<img src="img/avatar4.jpg" alt="">
 							</div>
-							<div class="col-2">
-								<div class="form-control">
-									<label for="index">Индекс</label>
-									<input id="index" type="text">
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="form-control">
-									<label for="location">Населенный пункт</label>
-									<input id="location" type="text">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-control">
-									<label for="address">Адрес</label>
-									<input id="address" type="text">
-								</div>
-							</div>
+							<div class="name">Валерий Владимирович Синельников</div>
+						</div>
+						<div class="seminar-info">
+							<div class="time">12 декабря, среда, с 11:00 до 18:00</div>
+							<div class="location">Москва, Измайловское шоссе д.71, корп. 3В, гост. Вега-Измайлово, конференц-зал «Васнецов»</div>
+						</div>
+						<div class="my-seminars-item-panel">
+							<div>Цена: <b>2 000 <span>₽</span></b></div>
+							<div>Статус: <b>Ожидает оплаты</b> <button type="button" class="btn-custom blue"><span>Оплатить</span></button></div>
 						</div>
 					</div>
-					<div class="form-section">
-						<h2>Скидки и промо-коды</h2>
-						<div class="promo-list">
-							<div class="promo-item">
-								<div class="promo-item-code">-5%</div>
-								<div class="promo-item-info">На все товары и семинары школы для участников проекта «Здравые люди»</div>
+					<div class="my-seminars-item">
+						<h3>
+							<a href="#">Искусство планирования своей жизни. Успешное достижение целей</a>
+						</h3>
+						<div class="my-seminars-item-author">
+							<div class="avatar">
+								<img src="img/person1.jpg" alt="">
 							</div>
-							<div class="promo-item">
-								<div class="promo-item-code">BFM4324FFMRT</div>
-								<div class="promo-item-info">-15% на первую покупку</div>
-							</div>
-							<div class="promo-item">
-								<div class="promo-item-code">QWA4874WDFY</div>
-								<div class="promo-item-info">-20% на первую повторное прохождение семинара «Сила рода»</div>
-							</div>
+							<div class="name">Надежда Милановна Cтранадко</div>
 						</div>
-						<div class="promo-form">
-							<div class="form-control">
-								<input type="text" placeholder="Добавить промо-код">
-							</div>
-							<button type="submit" class="btn-custom btn-custom-border"><span>Добавить</span></button>
+						<div class="seminar-info">
+							<div class="time">23 сентября, суббота, с 11:00 до 18:00</div>
+							<div class="location">Москва, Измайловское шоссе д.71, корп. 3В, гост. Вега-Измайлово, конференц-зал «Васнецов»</div>
+						</div>
+						<div class="my-seminars-item-panel">
+							<div>Цена: <b>14 990 <span>₽</span></b></div>
+							<div>Статус: <b>Оплачен</b></div>
 						</div>
 					</div>
-				</form>
+					<div class="my-seminars-item ended">
+						<h3>
+							<a href="#">Искусство планирования своей жизни. Успешное достижение целей</a>
+						</h3>
+						<div class="my-seminars-item-author">
+							<div class="avatar">
+								<img src="img/avatar2.jpg" alt="">
+							</div>
+							<div class="name">Игорь Смирнов</div>
+						</div>
+						<div class="seminar-info">
+							<div class="time">15 мая, суббота, с 11:00 до 18:00</div>
+							<div class="location">Москва, Измайловское шоссе д.71, корп. 3В, гост. Вега-Измайлово, конференц-зал «Васнецов»</div>
+						</div>
+						<div class="my-seminars-item-panel">
+							<div>Цена: <b>3 950 <span>₽</span></b></div>
+							<div>Статус: <b>Завершен</b></div>
+						</div>
+					</div>
+					<div class="my-seminars-item ended">
+						<h3>
+							<a href="#">Искусство планирования своей жизни. Успешное достижение целей</a>
+						</h3>
+						<div class="my-seminars-item-author">
+							<div class="avatar">
+								<img src="img/avatar4.jpg" alt="">
+							</div>
+							<div class="name">Валерий Владимирович Синельников</div>
+						</div>
+						<div class="seminar-info">
+							<div class="time">15 мая, суббота, с 11:00 до 18:00</div>
+							<div class="location">Москва, Измайловское шоссе д.71, корп. 3В, гост. Вега-Измайлово, конференц-зал «Васнецов»</div>
+						</div>
+						<div class="my-seminars-item-panel">
+							<div>Цена: <b>3 950 <span>₽</span></b></div>
+							<div>Статус: <b>Завершен</b></div>
+						</div>
+					</div>
+					<div class="my-seminars-item ended">
+						<h3>
+							<a href="#">Искусство планирования своей жизни. Успешное достижение целей</a>
+						</h3>
+						<div class="my-seminars-item-author">
+							<div class="avatar">
+								<img src="img/person1.jpg" alt="">
+							</div>
+							<div class="name">Надежда Милановна Cтранадко</div>
+						</div>
+						<div class="seminar-info">
+							<div class="time">15 мая, суббота, с 11:00 до 18:00</div>
+							<div class="location">Москва, Измайловское шоссе д.71, корп. 3В, гост. Вега-Измайлово, конференц-зал «Васнецов»</div>
+						</div>
+						<div class="my-seminars-item-panel">
+							<div>Цена: <b>3 950 <span>₽</span></b></div>
+							<div>Статус: <b>Завершен</b></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
