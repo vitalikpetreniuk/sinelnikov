@@ -2,28 +2,30 @@ $(function() {
 
 	$('.slider-1').owlCarousel({
         margin: 30,
-        items: 4,
         nav: true,
-        dots: false
+        dots: false,
+        responsive:{
+            1000:{
+                items: 3
+            },
+            1899:{
+                items: 4
+            }
+        }
     });
 
 	$('.slider-2').owlCarousel({
         margin: 30,
-        items: 3,
-        nav: true,
-        dots: false
-    });
-
-	$('.slider-vertical').owlCarousel({
-        items: 3,
-        loop: false,
-        mouseDrag: false,
-        touchDrag: false,
-        pullDrag: false,
-        margin: 22,
         nav: true,
         dots: false,
-        autoWidth: true
+        responsive:{
+            1000:{
+                items: 2
+            },
+            1899:{
+                items: 3
+            }
+        }
     });
 
 	$('.menu .last a').on('click', function (e) {
@@ -39,20 +41,24 @@ $(function() {
        $(this).addClass('hidden');
     });
 
-    $('.person-item').on('mouseenter', function () {
-        $(this).addClass('hover');
-        var personItemHight = $(this).outerHeight();
-        var personItemContHight = $(this).find('.person-item-cont').outerHeight();
-        var personItemNameHight = $(this).find('.person-item-name').outerHeight();
-        var personItemInfoHight = $(this).find('.person-item-info').outerHeight();
-        $(this).find('.person-item-back').css('height', personItemHight - personItemContHight + personItemNameHight + personItemInfoHight);
-    }).on('mouseleave', function () {
-        $(this).removeClass('hover');
-        var personItemHight = $(this).outerHeight();
-        var personItemContHight = $(this).find('.person-item-cont').outerHeight();
-        var personItemNameHight = $(this).find('.person-item-name').outerHeight();
-        var personItemInfoHight = $(this).find('.person-item-info').outerHeight();
-        $(this).find('.person-item-back').css('height', personItemHight);
+    $('.person-item').each(function () {
+        if(!$(this).parent().hasClass('item')){
+            $(this).on('mouseenter', function () {
+                $(this).addClass('hover');
+                var personItemHight = $(this).outerHeight();
+                var personItemContHight = $(this).find('.person-item-cont').outerHeight();
+                var personItemNameHight = $(this).find('.person-item-name').outerHeight();
+                var personItemInfoHight = $(this).find('.person-item-info').outerHeight();
+                $(this).find('.person-item-back').css('height', personItemHight - personItemContHight + personItemNameHight + personItemInfoHight);
+            }).on('mouseleave', function () {
+                $(this).removeClass('hover');
+                var personItemHight = $(this).outerHeight();
+                var personItemContHight = $(this).find('.person-item-cont').outerHeight();
+                var personItemNameHight = $(this).find('.person-item-name').outerHeight();
+                var personItemInfoHight = $(this).find('.person-item-info').outerHeight();
+                $(this).find('.person-item-back').css('height', personItemHight);
+            });
+        }
     });
 
     $('.article-cont-in ol li, .content-in ol li').each(function () {
@@ -60,10 +66,14 @@ $(function() {
     });
 
 
-    $('.article-cont-side-in').stick_in_parent();
+    $('.side-stick').stick_in_parent();
 
-    $('.article-cont-side-wrap').each(function () {
-        $(this).find('.owl-nav').prependTo($(this));
+    $('.article-list-year-cont').stick_in_parent({
+        offset_top: 80
+    });
+
+    $('.article-list-month-cont').stick_in_parent({
+        offset_top: 110
     });
 
     $('select').customSelect();
@@ -112,6 +122,38 @@ $(function() {
           var faqItemWidth = $(this).outerWidth();
           $(this).height(faqItemWidth);
        });
+    }).on('load resize scroll', function () {
+        var windowTop = $(this).scrollTop();
+        $('.header-min').each(function () {
+            if($('body').hasClass('home')){
+                var headerOffsetTop = $('.home .header').offset().top;
+                if(windowTop >= headerOffsetTop){
+                    $(this).addClass('fixed');
+                }else{
+                    $(this).removeClass('fixed');
+                }
+            }else{
+                var headerHeight = $('.header').outerHeight();
+                if(windowTop >= headerHeight){
+                    $(this).addClass('fixed').removeClass('hidden');
+                }else{
+                    $(this).removeClass('fixed').addClass('hidden');
+                }
+            }
+        });
+        $('.article-top-back').each(function () {
+           $(this).css('top', windowTop/5);
+        });
+
+        $('.article-list-year').each(function () {
+            var left = $(this).offset().left;
+            $(this).find('.article-list-year-cont, .article-list-month-cont').each(function () {
+                var dateWidth = $(this).outerWidth();
+                if($(this).hasClass('is_stuck')){
+                    $(this).css('left', left - dateWidth);
+                }
+            });
+        });
     });
 
     $('.grid').masonry({
@@ -245,6 +287,13 @@ $(function() {
             $(this).closest('.modal-select').removeClass('sale');
         }
         $(this).closest('.modal').find('.cart-total span.visible').text(selectValNum*priceNum);
+    });
+
+    $('.slider-vertical').slick({
+        slidesToShow: 3,
+        infinite: false,
+        speed: 200,
+        vertical: true
     });
 
 });
