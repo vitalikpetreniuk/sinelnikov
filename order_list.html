@@ -389,7 +389,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="add-menu">
+					<div class="add-menu hidden-xs">
 						<ul>
 							<li>
 								<a href="#">Данные пользователя</a>
@@ -407,7 +407,20 @@
 		</div>
 		<div class="content">
 			<div class="container">
-				<h1>Заказы в магазине здоровья</h1>
+				<h1><button type="button" class="user-menu-toggle visible-xs"><span></span></button> Заказы в магазине здоровья</h1>
+				<div class="add-menu visible-xs">
+					<ul>
+						<li>
+							<a href="#">Данные пользователя</a>
+						</li>
+						<li>
+							<a href="#">Запись на семинары</a>
+						</li>
+						<li>
+							<a href="#">Блог</a>
+						</li>
+					</ul>
+				</div>
 				<div class="table table-order">
 					<div class="table-top">
 						<div class="table-col date">Дата</div>
@@ -418,10 +431,20 @@
 					</div>
 					<div class="table-list">
 						<div class="table-item">
-							<div class="table-col date">11 января 2019</div>
-							<div class="table-col order-num">1234567890</div>
-							<div class="table-col sum"><span>18 560</span>₽</div>
+							<div class="table-col date">
+								<label>Дата:</label>
+								<div>11 января 2019</div>
+							</div>
+							<div class="table-col order-num">
+								<label>Номер заказа:</label>
+								<div>1234567890</div>
+							</div>
+							<div class="table-col sum">
+								<label>Сумма:</label>
+								<div><span>18 560</span>₽</div>
+							</div>
 							<div class="table-col status">
+								<label>Статус:</label>
 								<div>
 									<b>Ожидает оплаты</b>
 								</div>
@@ -430,10 +453,20 @@
 							<div class="table-col tracking-num"></div>
 						</div>
 						<div class="table-item">
-							<div class="table-col date">29 декабря 2018</div>
-							<div class="table-col order-num">1234567325</div>
-							<div class="table-col sum"><span>460</span>₽</div>
+							<div class="table-col date">
+								<label>Дата:</label>
+								<div>29 декабря 2018</div>
+							</div>
+							<div class="table-col order-num">
+								<label>Номер заказа:</label>
+								<div>1234567325</div>
+							</div>
+							<div class="table-col sum">
+								<label>Сумма:</label>
+								<div><span>460</span>₽</div>
+							</div>
 							<div class="table-col status">
+								<label>Статус:</label>
 								<div>
 									<b>Ожидает отправки</b>
 									<span>(наложенный платеж: <span>460</span> <b>₽</b>)</span>
@@ -442,73 +475,151 @@
 							<div class="table-col tracking-num"></div>
 						</div>
 						<div class="table-item">
-							<div class="table-col date">15 ноября 2018</div>
-							<div class="table-col order-num">1234567217</div>
-							<div class="table-col sum"><span>800</span>₽</div>
+							<div class="table-col date">
+								<label>Дата:</label>
+								<div>15 ноября 2018</div>
+							</div>
+							<div class="table-col order-num">
+								<label>Номер заказа:</label>
+								<div>1234567217</div>
+							</div>
+							<div class="table-col sum">
+								<label>Сумма:</label>
+								<div><span>800</span>₽</div>
+							</div>
 							<div class="table-col status">
+								<label>Статус:</label>
 								<div>
 									<b>Отправлен</b>
 									<span>(наложенный платеж: <span>400</span> <b>₽</b>)</span>
 								</div>
 							</div>
-							<div class="table-col tracking-num">14240010887254</div>
+							<div class="table-col tracking-num">
+								<label>Трекинг-номер:</label>
+								<div>14240010887254</div>
+							</div>
 						</div>
 						<div class="table-item">
-							<div class="table-col date">29 марта 2018</div>
-							<div class="table-col order-num">1234567132</div>
-							<div class="table-col sum"><span>7 500</span>₽</div>
+							<div class="table-col date">
+								<label>Дата:</label>
+								<div>29 марта 2018</div>
+							</div>
+							<div class="table-col order-num">
+								<label>Номер заказа:</label>
+								<div>1234567132</div>
+							</div>
+							<div class="table-col sum">
+								<label>Сумма:</label>
+								<div><span>7 500</span>₽</div>
+							</div>
 							<div class="table-col status">
+								<label>Статус:</label>
 								<div>
 									<b>Отправлен</b>
 								</div>
 							</div>
-							<div class="table-col tracking-num">14240010887254</div>
+							<div class="table-col tracking-num">
+								<label>Трекинг-номер:</label>
+								<div>14240010887254</div>
+							</div>
 						</div>
 						<div class="table-item">
-							<div class="table-col date">12 февраля 2018</div>
-							<div class="table-col order-num">1234529325</div>
-							<div class="table-col sum"><span>15 950</span>₽</div>
+							<div class="table-col date">
+								<label>Дата:</label>
+								<div>12 февраля 2018</div>
+							</div>
+							<div class="table-col order-num">
+								<label>Номер заказа:</label>
+								<div>1234529325</div>
+							</div>
+							<div class="table-col sum">
+								<label>Сумма:</label>
+								<div><span>15 950</span>₽</div>
+							</div>
 							<div class="table-col status">
+								<label>Статус:</label>
 								<div>
 									<b>Ожидает оплаты</b>
 									<span>(электронные версии: <span>300</span> <b>₽</b>)</span>
 								</div>
 								<button class="btn-custom blue"><span>Оплатить</span></button>
 							</div>
-							<div class="table-col tracking-num">14240010887254</div>
+							<div class="table-col tracking-num">
+								<label>Трекинг-номер:</label>
+								<div>14240010887254</div>
+							</div>
 						</div>
 						<div class="table-item received">
-							<div class="table-col date">29 января 2018</div>
-							<div class="table-col order-num">1234567132</div>
-							<div class="table-col sum"><span>7 500</span>₽</div>
+							<div class="table-col date">
+								<label>Дата:</label>
+								<div>29 января 2018</div>
+							</div>
+							<div class="table-col order-num">
+								<label>Номер заказа:</label>
+								<div>1234567132</div>
+							</div>
+							<div class="table-col sum">
+								<label>Сумма:</label>
+								<div><span>7 500</span>₽</div>
+							</div>
 							<div class="table-col status">
+								<label>Статус:</label>
 								<div>
 									<b>Получен</b>
 								</div>
 							</div>
-							<div class="table-col tracking-num">14240010887254</div>
+							<div class="table-col tracking-num">
+								<label>Трекинг-номер:</label>
+								<div>14240010887254</div>
+							</div>
 						</div>
 						<div class="table-item received">
-							<div class="table-col date">29 января 2018</div>
-							<div class="table-col order-num">1234567132</div>
-							<div class="table-col sum"><span>7 500</span>₽</div>
+							<div class="table-col date">
+								<label>Дата:</label>
+								<div>29 января 2018</div>
+							</div>
+							<div class="table-col order-num">
+								<label>Номер заказа:</label>
+								<div>1234567132</div>
+							</div>
+							<div class="table-col sum">
+								<label>Сумма:</label>
+								<div><span>7 500</span>₽</div>
+							</div>
 							<div class="table-col status">
+								<label>Статус:</label>
 								<div>
 									<b>Получен</b>
 								</div>
 							</div>
-							<div class="table-col tracking-num">14240010887254</div>
+							<div class="table-col tracking-num">
+								<label>Трекинг-номер:</label>
+								<div>14240010887254</div>
+							</div>
 						</div>
 						<div class="table-item received">
-							<div class="table-col date">29 января 2018</div>
-							<div class="table-col order-num">1234567132</div>
-							<div class="table-col sum"><span>7 500</span>₽</div>
+							<div class="table-col date">
+								<label>Дата:</label>
+								<div>29 января 2018</div>
+							</div>
+							<div class="table-col order-num">
+								<label>Номер заказа:</label>
+								<div>1234567132</div>
+							</div>
+							<div class="table-col sum">
+								<label>Сумма:</label>
+								<div><span>7 500</span>₽</div>
+							</div>
 							<div class="table-col status">
+								<label>Статус:</label>
 								<div>
 									<b>Получен</b>
 								</div>
 							</div>
-							<div class="table-col tracking-num">14240010887254</div>
+							<div class="table-col tracking-num">
+								<label>Трекинг-номер:</label>
+								<div>14240010887254</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -543,7 +654,13 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-in">
-				<div class="footer-block">
+				<div class="logo visible-xs">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+						<span>Школа здоровья и радости доктора Валерия Синельникова</span>
+					</a>
+				</div>
+				<div class="footer-block hidden-xs">
 					<div class="footer-menu">
 						<div class="footer-title">Семинары</div>
 						<ul>
@@ -571,7 +688,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="footer-block">
+				<div class="footer-block hidden-xs">
 					<div class="footer-menu">
 						<div class="footer-title">Магазин здоровья</div>
 						<ul>
@@ -653,7 +770,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer-block">
+				<div class="footer-block xs-2">
 					<div class="tel-block">
 						<div class="footer-title">Контактная информация</div>
 						<div class="tel-num">
@@ -695,6 +812,92 @@
 								<img src="img/icon-telegram.svg" alt="">
 							</a>
 						</div>
+					</div>
+				</div>
+				<div class="menu-xs visible-xs">
+					<div class="menu-xs-item">
+						<button type="button" class="menu-xs-toggle"><span>Семинары</span></button>
+						<ul>
+							<li>
+								<a href="#">Все семинары</a>
+							</li>
+							<li>
+								<a href="#">Семинары в центре «Светоч»</a>
+							</li>
+							<li>
+								<a href="#">Семинары доктора Синельникова</a>
+							</li>
+							<li>
+								<a href="#">Семинары в вашем городе</a>
+							</li>
+							<li>
+								<a href="#">Семинары онлайн школы</a>
+							</li>
+							<li>
+								<a href="#">Преподаватели</a>
+							</li>
+							<li>
+								<a href="#">Отзывы</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-xs-item">
+						<button type="button" class="menu-xs-toggle"><span>Магазин здоровья</span></button>
+						<ul>
+							<li>
+								<a href="#">Аудиокниги</a>
+							</li>
+							<li>
+								<a href="#">Книги на английском</a>
+							</li>
+							<li>
+								<a href="#">Книги на русском</a>
+							</li>
+							<li>
+								<a href="#">Медитации</a>
+							</li>
+							<li>
+								<a href="#">Медитации для детей</a>
+							</li>
+							<li>
+								<a href="#">Музыка для глубокой релаксации</a>
+							</li>
+							<li>
+								<a href="#">Продукция пасеки</a>
+							</li>
+							<li>
+								<a href="#">Психологические тренинги</a>
+							</li>
+							<li>
+								<a href="#">Специальные оздоровительные программы</a>
+							</li>
+							<li>
+								<a href="#">Флешки с продукцией школы</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-xs-item">
+						<button type="button" class="menu-xs-toggle"><span>Автор</span></button>
+						<ul>
+							<li>
+								<a href="#">Биография</a>
+							</li>
+							<li>
+								<a href="#">Блог</a>
+							</li>
+							<li>
+								<a href="#">Книги</a>
+							</li>
+							<li>
+								<a href="#">Познавательное видео</a>
+							</li>
+							<li>
+								<a href="#">Благотворительные проекты</a>
+							</li>
+							<li>
+								<a href="#">Доктор Синельников рекомендует</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
