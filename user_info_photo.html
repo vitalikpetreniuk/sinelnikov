@@ -389,7 +389,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="add-menu">
+					<div class="add-menu hidden-xs">
 						<ul>
 							<li>
 								<a href="#">Заказы в магазине здоровья</a>
@@ -407,30 +407,43 @@
 		</div>
 		<div class="content">
 			<div class="container">
-				<h1>Данные пользователя</h1>
+				<h1><button type="button" class="user-menu-toggle visible-xs"><span></span></button> Данные пользователя</h1>
+				<div class="add-menu visible-xs">
+					<ul>
+						<li>
+							<a href="#">Заказы в магазине здоровья</a>
+						</li>
+						<li>
+							<a href="#">Запись на семинары</a>
+						</li>
+						<li>
+							<a href="#">Блог</a>
+						</li>
+					</ul>
+				</div>
 				<form class="user-info-form">
 					<div class="form-section">
 						<h2>Основные</h2>
 						<div class="row">
-							<div class="col-4">
+							<div class="col-sm-4">
 								<div class="form-control">
 									<label for="lastname">Фамилия</label>
 									<input id="lastname" type="text">
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-sm-4">
 								<div class="form-control">
 									<label for="name5">Имя</label>
 									<input id="name5" type="text">
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-sm-4">
 								<div class="form-control">
 									<label for="patronymic">Отчество</label>
 									<input id="patronymic" type="text">
 								</div>
 							</div>
-							<div class="col-12">
+							<div class="col-sm-12">
 								<div class="form-block-1">
 									<div class="change-photo active">
 										<input type="file">
@@ -442,19 +455,19 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-sm-4">
 								<div class="form-control">
 									<label for="tel5">Номер телефона</label>
 									<input id="tel5" type="tel">
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-sm-4">
 								<div class="form-control">
 									<label for="email">E-mail</label>
 									<input id="email" type="email">
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-sm-4">
 								<a href="#" class="btn-custom blue change-pass-btn"><span>Сменить пароль</span></a>
 							</div>
 						</div>
@@ -784,13 +797,13 @@
 						<div class="modal-form">
 							<form>
 								<div class="row">
-									<div class="col-6">
+									<div class="col-sm-6">
 										<div class="form-control">
 											<label for="name">Имя</label>
 											<input id="name" type="text">
 										</div>
 									</div>
-									<div class="col-6">
+									<div class="col-sm-6">
 										<div class="form-control">
 											<label for="tel">Номер телефона</label>
 											<input id="tel" type="tel">
